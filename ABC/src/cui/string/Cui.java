@@ -1,3 +1,5 @@
+package cui.string;
+
 public class Cui {
     public static void main(String args[]){
         char a = 'До';
