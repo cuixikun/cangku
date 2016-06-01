@@ -1,7 +1,7 @@
 package cui.string;
 
 public class Jiuijiu2 {
-	public static void mian(String[] args){
+	public static void main(String[] args){
 		int i=9;
 		int j=9;
 		while (i>=1){
