@@ -8,7 +8,7 @@ public class Shuzudaozhi {
 	}
    //此方法专门实现数组转置
     public static void reverse(int aaa[]){
-    	int len=aaa.length/2;  //转置的次数
+    	int len=aaa.length/2;//转置的次数
     	int head=0;            //头部索引
     	int tail=aaa.length-1;//尾部索引
     	for(int x=0;x<len;x++){
