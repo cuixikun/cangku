@@ -23,7 +23,7 @@ class Book{
 
 public class Guanjianzi3 {
 	public static void main(String args[]){
-		Book book=new Book("java",1999.9);
+		Book book=new Book("java",9999.9);
 		System.out.println(book.getInfo());
 	}
 
