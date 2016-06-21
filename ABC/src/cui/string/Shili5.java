@@ -34,10 +34,10 @@ class Role{
 	public void setGroups(Group [] groups){
 		this.groups=groups;
 	}
-	public Group[] getgroups(){
+	public Group[] getGroups(){
 		return this.groups;
 	}
-	public Admin[] getadmins(){
+	public Admin[] getAdmins(){
 		return this.admins;
 	}
 	public String getInfo(){
@@ -59,10 +59,10 @@ class Group{
 	public void setActions(Action[] actions){
 		this.actions=actions;
 	}
-	public Action[] getactions(){
+	public Action[] getActions(){
 		return this.actions;
 	}
-	public Role [] getroles(){
+	public Role [] getRoles(){
 		return this.roles;
 	}
 	public String getInfo(){
@@ -137,15 +137,18 @@ public class Shili5 {
 		System.out.println(a1.getInfo());
 		System.out.println("\t"+a1.getRole().getInfo());
 		for (int x=0;x<( a1.getRole()).getGroups().length;x++){
-			System.out.println("\t\t"+a1.getRole().getGroups().getInfo());
-			for(int y=0;y<a1.getRole().getGroups()[x].getAction().length;y++){
-				System.out.println("\t\t\t"+a1.getRole().getGroups()[x].getAction()[y].getInfo9);
+			System.out.println("\t\t"+a1.getRole().getGroups()[x].getInfo());
+			for(int y=0;y<a1.getRole().getGroups()[x].getActions().length;y++){
+				System.out.println("\t\t\t"+a1.getRole().getGroups()[x].getActions()[y].getInfo());
 			}
 		}
 		System.out.println("***********************************************");
 		System.out.println(g2.getInfo());
-		for(int x=0;x<g2.getRoles().lengtht;x++){
-			System.out.println(g2.getRoles()[x].getInfo());
+		for(int x=0;x<g2.getRoles().length;x++){
+			System.out.println("\t"+g2.getRoles()[x].getInfo());
+			for(int y=0;y<g2.getRoles()[x].getAdmins().length;y++){
+				System.out.println("\t\t"+g2.getRoles()[x].getAdmins()[y].getInfo());
+			}
 		}
 	}
 
