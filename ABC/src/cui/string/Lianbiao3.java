@@ -57,5 +57,5 @@ public class Lianbiao3 {
 		link.add("hellod");//存放数据
 		link.print();//展示数据
 	}
-
+	
 }
