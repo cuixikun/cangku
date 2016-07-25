@@ -1,10 +1,11 @@
 /cui/
-/object/
 /lianshou/
-/fangwenquanxian/
+/object/
+/second/
+/异常处理/
+/枚举/
+/泛型/
 /访问权限/
 /访问权限2/
 /访问权限3/
-/异常处理/
-/泛型/
-/枚举/
+/annotation/
