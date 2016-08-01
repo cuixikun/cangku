@@ -4,6 +4,11 @@ class MyThread implements Runnable{
 	public void run(){
 		for(int x=0;x<20;x++){
 			if(this.ticket>0){
+				try{
+					Thread.sleep(100);
+					}catch(InterruptedException e){
+					       e.printStackTrace();
+					}
 			System.out.println(Thread.currentThread().getName()+"ÂôÆ±£¬ticket"+this.ticket--);
 			}
 		}
