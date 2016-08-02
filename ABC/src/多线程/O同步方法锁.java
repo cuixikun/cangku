@@ -20,7 +20,7 @@ class MyThread implements Runnable{
 }
 }
 public  class O同步方法锁 {
-	public  static void main(String args[]) throws Exception{
+	public static void main(String args[]) throws Exception{
 		MyThread mt=new MyThread();
 		new Thread(mt,"票贩子A").start();
 		new Thread(mt,"票贩子B").start();
