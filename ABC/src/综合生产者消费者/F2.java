@@ -23,7 +23,7 @@ class Info{
 		super.notify();//唤醒其他等待线程
 	}
 	public synchronized void get(){
-		if(flag==true){
+		if(flag==true){//还没生产
 			try{
 				super.wait();;
 				}catch(InterruptedException e){
