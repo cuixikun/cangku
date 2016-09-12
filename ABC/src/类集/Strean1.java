@@ -23,8 +23,12 @@ public class Strean1 {
 		//去掉重复数据形成新的集合数据，里面是不包含重复数据的集合
 		//List<String> newAll = stream.distinct().collect(Collectors.toList());
 		//newAll.forEach(System.out::println);
-		//过滤操作，使用了断言性函数式接口，使用了string类中的contains()方法，
-		List<String> newAll = stream.distinct().map((x)->x.toLowerCase()).filter((x) ->x.contains("a")).collect(Collectors.toList());
+		//过滤操作，使用了断言性函数式接口，使用了string类中的contains()方法，                                                 // 跳两个， 取两个
+		List<String> newAll = stream.distinct()
+				.map((x)->x.toLowerCase())
+				.skip(2).limit(2)
+				.filter((x) ->x.contains("a"))
+				.collect(Collectors.toList());
 		newAll.forEach(System.out::println);//结果区分大小写
 	}
 
